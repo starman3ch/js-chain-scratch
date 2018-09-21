@@ -4,7 +4,7 @@ class Transaction {
     constructor() {
         this.id = ChainUtil.id();
         this.input = null;
-        this.ouputs = [];
+        this.outputs = [];
     }
 
     static newTransaction(senderWallet, recipient, amount) {
