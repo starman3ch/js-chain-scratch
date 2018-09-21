@@ -29,7 +29,7 @@ class Transaction {
             timestamp: Date.now(),
             amount: senderWallet.balance,
             address: senderWallet.publicKey,
-            signature: senderWAllet.sign(ChainUtil.hash(transaction.outputs))
+            signature: senderWallet.sign(ChainUtil.hash(transaction.outputs))
         }
     }
 }
