@@ -11,7 +11,11 @@ class Wallet {
     toString() {
         return `Wallet -
             publicKey: ${this.publicKey.toString()}
-            balance: ${this.balance}`
+            balance  : ${this.balance}`
+    }
+
+    sign(dataHash) {
+        return this.keyPair.sign(dataHash);
     }
 }
 
