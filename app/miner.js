@@ -15,3 +15,5 @@ class Miner {
         // broadcast to every miner to clear their transaction pools
     }
 }
+
+module.exports = Miner;
